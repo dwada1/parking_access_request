@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="issuance" table="x_11599_par_parking_access_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>issuance</element>
+            <name>x_11599_par_parking_access_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-02 23:11:28</sys_created_on>
+            <sys_id>5566e14497351110fc8435dfe153afbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>issuance</sys_name>
+            <sys_package display_value="Parking Access Request" source="x_11599_par">aecf554497f11110fc8435dfe153aff3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Parking Access Request">aecf554497f11110fc8435dfe153aff3</sys_scope>
+            <sys_update_name>sys_choice_x_11599_par_parking_access_request_issuance</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-02 23:11:28</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issuance</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_11599_par_parking_access_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-02 23:11:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1166e14497351110fc8435dfe153afbf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-02 23:11:28</sys_updated_on>
+            <value>new</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issuance</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Annual Renewal (not applicable for keycards)</label>
+            <language>en</language>
+            <name>x_11599_par_parking_access_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-02 23:11:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6966e14497351110fc8435dfe153afc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-02 23:11:29</sys_updated_on>
+            <value>annual_renewal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issuance</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lost/Stolen ($10 Fee)</label>
+            <language>en</language>
+            <name>x_11599_par_parking_access_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-09-02 23:11:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e566e14497351110fc8435dfe153afc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-09-02 23:11:29</sys_updated_on>
+            <value>lost_stolen</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Parking Access Request" max_length="40" name="x_11599_par_parking_access_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Agency/Program Name If Not City Employee" max_length="40" name="agency_program_name_if_not_city_employee" type="string"/>
+        <element label="City Hall/PSF/Finance" max_length="40" name="applicant_primary_work_location" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Other (please specify)" max_length="40" name="applicant_primary_work_location_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Applicant Regular Work Schedule" max_length="40" name="applicant_regular_work_schedule" type="string"/>
+        <element label="As-needed on City Payroll" max_length="40" name="as_needed_on_city_payroll" type="boolean"/>
+        <element label="City Affiliate" max_length="40" name="city_affiliate" type="boolean"/>
+        <element attributes="encode_utf8=false" label="City Dept/Division Contact Name" max_length="32" name="city_dept_division_contact_name" reference="sys_user" type="reference"/>
+        <element label="From a Temp Agency" max_length="40" name="from_a_temp_agency" type="boolean"/>
         <element choice="1" label="Issuance" max_length="40" name="issuance" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
@@ -8,6 +16,10 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Permanent Employee" max_length="40" name="permanent_employee" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Person Applicant Is Replacing" max_length="40" name="person_applicant_is_replacing" type="string"/>
+        <element label="Pool Permit/Vehicle" max_length="40" name="pool_permit_vehicle" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Applicant" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="request_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Keycard" sequence="1" value="keycard"/>
@@ -20,6 +32,9 @@
             <element name="u_reference_1"/>
         </index>
         <index name="index2">
+            <element name="requested_for"/>
+        </index>
+        <index name="index3">
             <element name="sys_class_name"/>
         </index>
     </element>
